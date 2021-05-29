@@ -52,9 +52,9 @@
 }
 @media (max-width: 700px) {
     .contacts a {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
-}
+ }
 
 /* Skills */
 .skill {
@@ -109,7 +109,7 @@
 }
 @media (max-width: 700px){
     .skill{
-        margin-top: 0px;
+        margin-top: 0;
     }
     .header-photo img{
         width: 65%;
