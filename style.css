@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+}
+.header-photo img {
+    width: 70%;
+}
+.header-name {
+    width: 100%;
+    text-align: left;
+}
+.my-name {
+    font-size: 25px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.position {
+    font-size: 20px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contacts {
+    width: 100%;
+    text-align: center;
+}
+.contacts a {
+    font-size: 1.4rem;
+    color: black;
+    margin: 4px;
+    text-decoration: none;
+    font-family: monospace;
+}
+.contacts a:hover {
+    opacity: 0.6;
+    color: darkblue;
+}
+@media (max-width: 700px) {
+    .contacts a {
+        font-size: 0.8rem;
+    }
+}
