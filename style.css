@@ -3,3 +3,6 @@
     margin: 0 auto;
     outline: 1px solid cadetblue;
 }
+.photo-block img{
+    width: 10%;
+}
