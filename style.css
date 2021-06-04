@@ -1,8 +1,278 @@
 .main{
+    display: flex;
     width: 900px;
     margin: 0 auto;
     outline: 1px solid cadetblue;
+    flex-direction: column;
+}
+
+.header-block{
+    display: flex;
+    width: 850px;
+    padding: 25px;
+    background-color: #e9e9e9;
+}
+.photo-block{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 40px;
+    outline: 1px solid cadetblue;
+    flex-direction: column;
+    width: 150px;
 }
 .photo-block img{
-    width: 10%;
+    width: 100%;
+}
+.contacts-name-section{
+    display: flex;
+    flex-direction: row;
+    outline: 1px solid cadetblue;
+}
+.name-contacts-block{
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid cadetblue;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+.name{
+    display: flex;
+    outline: 1px solid cadetblue;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+.gender-age{
+    display: flex;
+    outline: 1px solid cadetblue;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+
+}
+.contacts{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: column;
+    line-height: 1.3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: black;
+    margin-top: 40px;
+}
+.contacts a{
+    color: black;
+}
+.contacts a:hover {
+    opacity: 0.6;
+    color: darkblue;
+}
+.contacts-icon{
+    margin-top: 5px;
+}
+.citizenship-block{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: column;
+    line-height: 1.3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: black;
+    margin-top: 40px;
+}
+
+/* position-section */
+
+.position-section{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.page-brake{
+    display: flex;
+    outline: 1px solid cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: gray;
+    border-bottom: 1px inset;
+    border-color: grey;
+    line-height: 0.1em;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.page-brake h3{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em
+}
+.position-info{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: black;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em
+}
+.position-info p{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+/* experience-section */
+
+.experience-section{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.experience-date{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: row;
+    min-width: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: grey;
+}
+.work-description-block{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: row;
+}
+.work-place-block{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: column;
+    min-width: 670px;
+}
+.work-place{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: column;
+}
+.work-place a{
+    display: flex;
+    outline: 1px solid cadetblue;
+    color: black;
+}
+.work-place a:hover{
+    opacity: 0.6;
+    color: darkblue;
+}
+h2{
+    display: flex;
+    outline: 1px solid cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+h4{
+    display: flex;
+    outline: 1px solid cadetblue;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.achievements{
+    display: flex;
+    outline: 1px solid cadetblue;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    flex-direction: column;
+    padding-left: 30px;
+}
+/* education-section */
+.education-grade{
+    display: flex;
+    outline: 1px solid cadetblue;
+    color: black;
+}
+.education-section{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.educational-institution-block{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: row;
+    min-width: 670px;
+}
+.educational-institution{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: row;
+
+}
+.institution-name{
+   min-width: 670px;
+}
+.institution-name p{
+    display: flex;
+    outline: 1px solid cadetblue;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+/* skills-section */
+.skills-section{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.skills-block{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: row;
+}
+.skills-list{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: row;
+    min-width: 670px;
+    margin-top: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.about-me{
+    display: flex;
+    outline: 1px solid cadetblue;
+    flex-direction: row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.footer-name {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 900px;
+    width: 100%;
+    border-top: 1px inset;
+    border-color: black;
+}
+.footer-name p {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
 }
