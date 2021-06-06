@@ -3,6 +3,8 @@
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="style.css">
         <title>Резюме</title>
@@ -10,7 +12,7 @@
 <body>
 <section class="main">
         <header>
-                <span class="header-block"></span>
+                <span class="header-block"><a class="dark-mode" href="#" onclick="darkMode()">DarkMode</a></span>
         </header>
 
         <section class="contacts-name-section">
@@ -23,11 +25,11 @@
                         <div class="contacts">
                                 <a href="tel:+7(926) 3208855">+7 (926) 3208855</a>
                                 <a href="mailto:gorbanevaa@hotmail.com">gorbanevaa@hotmail.com</a>
-                                <div class="contacts-icon">
-                                        <a href="https://t.me/hanuky"><i class="fab fa-telegram"></i></a>
-                                        <a href="https://hh.ru/resume/593f421bff08f797760039ed1f547432757757"><i class="fas fa-briefcase"></i></a>
-                                        <a href="https://www.linkedin.com/in/andrew-gorbanev-b621a36a/"><i class="fab fa-linkedin"></i></a>
-                                </div>
+                                <ul class="contacts-icons">
+                                        <li><a href="https://t.me/hanuky"><i class="tg-icon contact-icon"></i></a></li>
+                                        <li><a href="https://hh.ru/resume/593f421bff08f797760039ed1f547432757757"><i class="hh-icon contact-icon"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/andrew-gorbanev-b621a36a/"><i class="in-icon contact-icon"></i></a></li>
+                                </ul>
                         </div>
                         <div class="citizenship-block">
                                 <p>Проживает: Москва<br>
@@ -253,6 +255,22 @@
                 </div>
         </footer>
 </section>
-<script src="https://kit.fontawesome.com/0af66ae063.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+        let darkMode = () => {
+                if (!document.querySelector('body').hasAttribute('style')){
+                        document.querySelector('body').setAttribute("style", "background-color: #222;");
+                        let text = document.querySelectorAll('body *');
+                        for(let el of text) {el.setAttribute("style", "color:#efefef;")};
+                        document.querySelector('.header-block').setAttribute("style", "background-color: #444;");
+                        document.querySelector('.dark-mode').textContent = "LightMode";
+                }
+                else{
+                        document.querySelector('body').removeAttribute("style");
+                        let text = document.querySelectorAll('body *');
+                        for(let el of text) {el.removeAttribute("style")};
+                        document.querySelector('.dark-mode').textContent = "DarkMode";
+                }
+        }
+</script>
 </body>
 </html>
