@@ -96,6 +96,19 @@
     background-repeat: no-repeat;
     border-radius: 50%;
 }
+ .tech-icon{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    margin-left: 330px;
+ }
+.print-icon{
+    background-image: url("img/print.png");
+}
+.pdf-icon{
+    background-image: url("img/pdf-download.png");
+}
 .night-icon{
     background-image: url("img/dark_theme.svg");
 }
