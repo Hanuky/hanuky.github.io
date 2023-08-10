@@ -11,14 +11,18 @@
 
 .header-block{
     display: flex;
-    width: 850px;
+    width: 100%;    
     padding: 25px;
     background-color: #e9e9e9;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 .dark-mode{
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 700;
     color: black;
+    margin-left: 800px;
 }
 .photo-block{
     display: flex;
@@ -90,6 +94,26 @@
     height: 20px;
     background-size: 20px 20px;
     background-repeat: no-repeat;
+    border-radius: 50%;
+}
+ .tech-icon{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    margin-left: 330px;
+ }
+.print-icon{
+    background-image: url("img/print.png");
+}
+.pdf-icon{
+    background-image: url("img/pdf-download.png");
+}
+.night-icon{
+    background-image: url("img/dark_theme.svg");
+}
+.day-icon{
+    background-image: url("img/day_theme.svg");
 }
 .hh-icon{
     background-image: url("img/min-hh.svg");
@@ -173,6 +197,17 @@ h2{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: grey;
+}
+h5{
+    display: flex;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: normal;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; 
 }
 .work-description-block{
     display: flex;
@@ -259,17 +294,25 @@ h4{
 .skills-block{
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 4px;
 }
 .skills-list{
-    display: flex;
-    flex-direction: row;
     min-width: 670px;
     margin-top: 0px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    padding-inline-start: 0px;
+   
 }
-.skills-list ul{
-    padding-left: 15px;
+ul.skills-list li{
+    display: inline;
+    padding: 5px;
+    background-color: #e9e9e9;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    line-height: 30px;
 }
 .about-me{
     display: flex;
